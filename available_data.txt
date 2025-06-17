@@ -1,0 +1,29 @@
+## Checking where data is available ##
+
+Obs data -> ERA5
+
+Period -> January 1940 - May 2025
+
+Variables:
+* t2m (daily)
+* si100 (hourly)
+* si10 (hourly)
+* ssrd (daily)
+* [mslp]
+
+Folder -> /gws/nopw/j04/canari/users/benhutch/ERA5
+
+# t2m #
+
+1940 -> 1950
+missing
+
+1950 -> 2020
+ERA5_t2m_daily_1950_2020.nc (daily means)
+Lon bounds: -45 to 40.219 degrees east
+Lat bounds: 29.93 to 89.78 degrees north
+
+2020 -> 2025
+---ONLY DJF---
+Folder -> /gws/nopw/j04/canari/users/benhutch/ERA5/year_month
+Pattern ERA5_EU_T_U10_V10_mslYYYY_MM.nc (hourly means)
